@@ -30,9 +30,20 @@ btn.addEventListener('click',
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
 
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+const giocatore = Math.floor(Math.random() * 6 ) +1;
+alert('il dado giocatore vale' + giocatore)
+
+const computer = Math.floor(Math.random() * 6 ) +1;
+alert('il dado computer vale' + computer)
+
+
+if(giocatore > computer){
+    alert('il giocatore vince')
+}else if (computer > giocatore)
+    alert('il computer vince'){
+}else {
+    alert ('pareggio')
+}
 
 
 //Stabilire il vincitore, in base a chi fa il punteggio più alto
